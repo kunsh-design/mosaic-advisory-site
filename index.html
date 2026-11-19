@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mosaic Advisory LLC</title>
+<meta name="description" content="Mosaic Advisory LLC provides business advisory and US representation services for international companies. Based in Jersey City, New Jersey.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' fill='%231f3a5f'/%3E%3Crect x='17' y='2' width='13' height='13' fill='%23c08a3e'/%3E%3Crect x='2' y='17' width='13' height='13' fill='%23c08a3e'/%3E%3Crect x='17' y='17' width='13' height='13' fill='%231f3a5f'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #1b2430;
+    --muted: #5b6573;
+    --navy: #1f3a5f;
+    --gold: #c08a3e;
+    --bg: #ffffff;
+    --soft: #f5f3ef;
+    --line: #e4e0d8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; color: var(--navy); text-decoration: none; font-size: 18px; }
+  .mark { display: grid; grid-template-columns: 11px 11px; gap: 3px; }
+  .mark span { width: 11px; height: 11px; display: block; }
+  .mark span:nth-child(1), .mark span:nth-child(4) { background: var(--navy); }
+  .mark span:nth-child(2), .mark span:nth-child(3) { background: var(--gold); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 28px; font-size: 15px; }
+  nav a:hover { color: var(--navy); }
+
+  .hero { background: var(--soft); border-bottom: 1px solid var(--line); }
+  .hero .wrap { padding: 96px 24px 88px; }
+  .eyebrow { color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 13px; margin: 0 0 16px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 48px; line-height: 1.15; margin: 0 0 20px; color: var(--navy); max-width: 760px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 0 32px; }
+  .btn { display: inline-block; background: var(--navy); color: #fff; padding: 13px 26px; text-decoration: none; font-weight: 600; font-size: 15px; border-radius: 2px; }
+  .btn:hover { background: #162b47; }
+
+  section { padding: 80px 0; }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 32px; color: var(--navy); margin: 0 0 16px; }
+  .intro { color: var(--muted); max-width: 680px; margin: 0 0 48px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { border: 1px solid var(--line); padding: 28px; border-top: 3px solid var(--gold); }
+  .card h3 { margin: 0 0 10px; font-size: 18px; color: var(--navy); }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  .about { background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about p { max-width: 720px; color: var(--muted); }
+
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 720px; }
+  .contact-grid dt { font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--gold); font-weight: 600; margin-bottom: 6px; }
+  .contact-grid dd { margin: 0; font-size: 17px; }
+  .contact-grid a { color: var(--navy); }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    nav { display: none; }
+    .hero .wrap { padding: 64px 16px 56px; }
+    h1 { font-size: 34px; }
+    .lead { font-size: 17px; }
+    section { padding: 56px 0; }
+    h2 { font-size: 27px; }
+    .grid, .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="mark"><span></span><span></span><span></span><span></span></span>Mosaic Advisory LLC</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Jersey City, New Jersey</p>
+    <h1>Business advisory and US representation for international companies.</h1>
+    <p class="lead">Mosaic Advisory LLC helps overseas businesses establish and maintain a dependable presence in the United States.</p>
+    <a class="btn" href="mailto:hello@mosaicadvisoryllc.us">Get in touch</a>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="intro">Practical support for companies based outside the United States that need a reliable local partner.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>US Representation</h3>
+        <p>A US-based point of contact for international companies, handling communication and correspondence on their behalf.</p>
+      </div>
+      <div class="card">
+        <h3>Regulatory Liaison</h3>
+        <p>Acting as the US contact for regulatory correspondence and coordinating responses with our clients' teams abroad.</p>
+      </div>
+      <div class="card">
+        <h3>Business Advisory</h3>
+        <p>Guidance on entering and operating in the US market, from documentation to vendor and partner coordination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>Mosaic Advisory LLC is a US limited liability company based in Jersey City, New Jersey. We work with international businesses that need a trustworthy, responsive presence in the United States, so they can focus on their operations while we take care of local communication and coordination.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="intro">For enquiries, please write to us and we will respond promptly.</p>
+    <dl class="contact-grid">
+      <div>
+        <dt>Email</dt>
+        <dd><a href="mailto:hello@mosaicadvisoryllc.us">hello@mosaicadvisoryllc.us</a></dd>
+      </div>
+      <div>
+        <dt>Location</dt>
+        <dd>Jersey City, New Jersey, USA</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Mosaic Advisory LLC</span>
+    <span>mosaicadvisoryllc.us</span>
+  </div>
+</footer>
+</body>
+</html>
